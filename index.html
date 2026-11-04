@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisuaLens | Photography Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="logo">VISUA<span>LENS.</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <p class="eyebrow">VISUAL STORIES • EST. 2026</p>
+    <h1>Capturing moments.<br>
+      <span>Creating memories.</span>
+    </h1>
+    <p class="hero-text">
+      A collection of beautiful moments, places
+      and stories captured through my lens.
+    </p>
+    <a href="#gallery" class="explore-btn">Explore Gallery ↓</a>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">MY CREATIVE WORLD</p>
+        <h2>Selected Photography</h2>
+      </div>
+      <p>Every picture tells a story.</p>
+    </div>
+
+    <div class="filters">
+      <button class="active" data-category="all">All Photos</button>
+      <button data-category="nature">Nature</button>
+      <button data-category="portrait">Portrait</button>
+      <button data-category="architecture">Architecture</button>
+      <button data-category="travel">Travel</button>
+    </div>
+
+    <div class="gallery" id="galleryGrid">
+
+      <div class="photo" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=700"
+             alt="Sunrise landscape">
+        <div class="photo-info">
+          <span>Nature</span>
+          <h3>Golden Morning</h3>
+        </div>
+      </div>
+
+      <div class="photo" data-category="portrait">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=700"
+             alt="Portrait photography">
+        <div class="photo-info">
+          <span>Portrait</span>
+          <h3>Human Expressions</h3>
+        </div>
+      </div>
+
+      <div class="photo" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=700"
+             alt="Architecture">
+        <div class="photo-info">
+          <span>Architecture</span>
+          <h3>Modern Lines</h3>
+        </div>
+      </div>
+
+      <div class="photo" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700"
+             alt="Travel landscape">
+        <div class="photo-info">
+          <span>Travel</span>
+          <h3>Open Roads</h3>
+        </div>
+      </div>
+
+      <div class="photo" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700"
+             alt="Forest">
+        <div class="photo-info">
+          <span>Nature</span>
+          <h3>Into the Forest</h3>
+        </div>
+      </div>
+
+      <div class="photo" data-category="portrait">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700"
+             alt="Man portrait">
+        <div class="photo-info">
+          <span>Portrait</span>
+          <h3>Natural Character</h3>
+        </div>
+      </div>
+
+      <div class="photo" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700"
+             alt="Mountain">
+        <div class="photo-info">
+          <span>Travel</span>
+          <h3>Mountain Escape</h3>
+        </div>
+      </div>
+
+      <div class="photo" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=700"
+             alt="Building">
+        <div class="photo-info">
+          <span>Architecture</span>
+          <h3>Minimal Spaces</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <p class="eyebrow">BEHIND THE CAMERA</p>
+    <h2>Photography is the art<br>of noticing beauty.</h2>
+    <p>
+      I believe every moment deserves to be remembered.
+      Through photography, I capture emotions, nature,
+      architecture and the beauty of everyday life.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's create something beautiful.</h2>
+    <p>Have a project or collaboration in mind?</p>
+    <a href="mailto:hello@example.com">Get In Touch →</a>
+  </section>
+
+  <footer>
+    <h2>VISUALENS.</h2>
+    <p>Capturing life, one frame at a time.</p>
+    <p>© 2026 VisuaLens Photography Portfolio</p>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="close" id="closeBtn">&times;</button>
+    <button class="prev" id="prevBtn">&#10094;</button>
+    <img id="lightboxImg" src="" alt="Full size preview">
+    <button class="next" id="nextBtn">&#10095;</button>
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
